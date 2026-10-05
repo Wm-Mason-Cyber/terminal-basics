@@ -1,0 +1,33 @@
+# Terminal Quest — server track solution (run as a student account in a provisioned server)
+whoami
+hostname
+pwd
+ip addr
+ls /home
+ls /home | wc -l
+!ls /home/jsmith
+ls /home/instructor
+ls -ld ~
+who
+ps aux
+ps -u jsmith
+groups
+mkdir ~/mission2
+<send nano ~/mission2/about_me.txt\n>
+<send Jane\rPizza\rI want to learn hacking\x0f\r>
+<keys \x18>
+ls -l /srv/class/p1
+cp ~/mission2/about_me.txt /srv/class/p1/jsmith.txt
+chgrp p1 /srv/class/p1/jsmith.txt
+chmod 640 /srv/class/p1/jsmith.txt
+chown instructor /srv/class/p1/jsmith.txt
+!cat /srv/class/p1/jsmith.txt
+cat /srv/class/p1/welcome.txt
+tail /srv/class/shared/server.log
+grep ALERT /srv/class/shared/server.log | wc -l
+head -n 3 /srv/class/shared/server.log
+find /srv/class/shared -name "*.flag"
+cat /srv/class/shared/archive/.vault/server.flag >> ~/mission2/about_me.txt
+history | grep chmod
+apt show nano
+<keys sudo apt install sl\nCyberDefender2026!\n>

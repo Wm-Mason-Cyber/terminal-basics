@@ -1,0 +1,72 @@
+# Terminal Quest — local track solution, with a few deliberate mistakes ("!").
+!LS
+whoami
+hostname
+pwd
+ls
+clear
+<send man ls\n>
+<keys q>
+yes I am learning Linux
+<ctrl-c>
+!cd inbox
+cd quest
+ls -a
+cat .secret_note
+cd inbox
+cat welcome.txt
+!cd..
+cd ..
+cd /
+ls
+ls /mnt/c
+cd ~
+cd $HOME/quest
+ls -l
+mkdir evidence
+touch evidence/notes.txt
+echo Hello, I am me
+echo "Analyst: me" > evidence/notes.txt
+!echo "Case: web" > evidence/notes.txt
+!echo "Analyst: me" > evidence/notes.txt
+echo "Case: web server break-in" >> evidence/notes.txt
+cat evidence/notes.txt
+<send nano evidence/notes.txt\n>
+<send \x1b/\rStarted investigation today\x0f\r>
+<keys \x18>
+cp inbox/welcome.txt evidence/
+mv evidence/welcome.txt evidence/briefing.txt
+rm junk/*.txt
+rmdir junk
+head logs/auth.log
+tail logs/auth.log
+wc -l logs/auth.log
+<send less logs/auth.log\n>
+<keys q>
+!grep "failed" logs/auth.log
+grep "Failed" logs/auth.log
+grep "Failed" logs/auth.log | wc -l
+grep "Failed" logs/auth.log > evidence/failed.txt
+history | grep cd
+find ~/quest -name "*.key"
+cp archive/2024/sep/old/backup/vault.key evidence/
+./tools/scan.sh
+chmod +x tools/scan.sh
+./tools/scan.sh
+chmod 640 evidence/notes.txt
+groups
+chgrp users evidence/notes.txt
+# root-only tasks can't run in the test harness (no passwordless sudo)
+!<keys quest skip\ny\n>
+!<keys quest skip\ny\n>
+!<keys quest skip\ny\n>
+ps
+ps aux | grep bash
+ip addr
+apt search cowsay
+!<keys quest skip\ny\n>
+!<keys quest skip\ny\n>
+!echo "I am a Linux hacker" | cowsay
+!<keys quest skip\ny\n>
+# ssh is faked by the test (TQ_TEST_RC_EXTRA) since there is no server here
+ssh me@server.invalid

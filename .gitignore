@@ -1,0 +1,4 @@
+# Real rosters contain passwords — never commit them.
+infra/students.csv
+infra/out/
+grades_report*.csv

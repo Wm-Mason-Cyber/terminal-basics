@@ -1,0 +1,14 @@
+
+  ═══════════════════════════════════════════════════════
+    T E R M I N A L   Q U E S T   ·   P A R T   2
+    The Shared Class Server  ·  Period __PERIOD__
+  ═══════════════════════════════════════════════════════
+
+   Big ideas:
+     · ssh puts your keyboard on another computer
+     · A shared server has many users; permissions keep them safe
+     · Groups let you share with exactly the right people
+     · Only admins get sudo
+
+   Tip: when you type your password, nothing appears. That's normal.
+
